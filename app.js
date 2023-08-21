@@ -8,11 +8,11 @@ toggleBtnM.addEventListener('click', () => {
     if (navVisible === 'false') {
         navBar.setAttribute('data-visible', true);
         toggleBtnM.setAttribute('aria-expanded', true);
-        iconBtnToggle.src = '/news-homepage-main/assets/images/icon-menu-close.svg'
+        iconBtnToggle.src = './assets/images/icon-menu-close.svg'
     } else if (navVisible === 'true') {
         navBar.setAttribute('data-visible', false);
         toggleBtnM.setAttribute('aria-expanded', false);
-        iconBtnToggle.src = '/news-homepage-main/assets/images/icon-menu.svg'
+        iconBtnToggle.src = './assets/images/icon-menu.svg'
     }
 });
 
@@ -21,9 +21,9 @@ function heroChangeImg() {
     const viewPortWidth = window.innerWidth || document.documentElement.clientWidth;
 
     if (viewPortWidth <= 430) {
-        image.src = '/news-homepage-main/assets/images/image-web-3-mobile.jpg';
+        image.src = './assets/images/image-web-3-mobile.jpg';
     } else if (viewPortWidth > 430) {
-        image.src = '/news-homepage-main/assets/images/image-web-3-desktop.jpg';
+        image.src = './assets/images/image-web-3-desktop.jpg';
     }
 };
 
